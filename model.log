@@ -1,0 +1,102 @@
+Loading libraries...
+Libraries loaded in 7656.53 ms.
+Setting config...
+Config set in 27.037 ms.
+Loading and preprocessing data...
+Data loaded and preprocessed in 12501.393 ms.
+Building vocabulary...
+Vocabulary built in 15532.889 ms.
+Generating data batcher and iterator...
+Data batcher and iterator generated in 0.998 ms.
+Creating model...
+Model created in 7938.547 ms.
+Training model...
+Training params: 20 epochs | LR = 10.0 | Batch size = 128 | Step size = 1 | Gamma = 0.9
+Model params: Vocabulary size = 189780 | Embedding size = 4096 | Training device = cuda
+----------------------------------------------------------------------------------------------------
+| Epoch: 1 | 269/538 batches complete | Training time: 31.288s | Training accuracy: 87.361% | Current loss: 0.167 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 1 | Elapsed time: 64.594s | Validation accuracy: 97.019% | Device temperature: 58°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 2 | 269/538 batches complete | Training time: 31.771s | Training accuracy: 98.015% | Current loss: 0.01 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 2 | Elapsed time: 64.69s | Validation accuracy: 98.066% | Device temperature: 59°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 3 | 269/538 batches complete | Training time: 31.096s | Training accuracy: 98.857% | Current loss: 0.042 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 3 | Elapsed time: 64.227s | Validation accuracy: 97.955% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 4 | 269/538 batches complete | Training time: 31.343s | Training accuracy: 99.204% | Current loss: 0.034 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 4 | Elapsed time: 64.317s | Validation accuracy: 98.263% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 5 | 269/538 batches complete | Training time: 30.956s | Training accuracy: 99.389% | Current loss: 0.039 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 5 | Elapsed time: 64.078s | Validation accuracy: 98.398% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 6 | 269/538 batches complete | Training time: 31.044s | Training accuracy: 99.439% | Current loss: 0.031 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 6 | Elapsed time: 64.279s | Validation accuracy: 98.423% | Device temperature: 61°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 7 | 269/538 batches complete | Training time: 31.296s | Training accuracy: 99.563% | Current loss: 0.016 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 7 | Elapsed time: 65.77s | Validation accuracy: 98.312% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 8 | 269/538 batches complete | Training time: 31.395s | Training accuracy: 99.659% | Current loss: 0.033 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 8 | Elapsed time: 64.342s | Validation accuracy: 98.288% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 9 | 269/538 batches complete | Training time: 31.195s | Training accuracy: 99.685% | Current loss: 0.002 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 9 | Elapsed time: 64.225s | Validation accuracy: 98.164% | Device temperature: 59°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 10 | 269/538 batches complete | Training time: 31.604s | Training accuracy: 99.76% | Current loss: 0.001 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 10 | Elapsed time: 64.429s | Validation accuracy: 98.559% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 11 | 269/538 batches complete | Training time: 31.484s | Training accuracy: 99.763% | Current loss: 0.008 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 11 | Elapsed time: 66.687s | Validation accuracy: 98.534% | Device temperature: 59°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 12 | 269/538 batches complete | Training time: 31.22s | Training accuracy: 99.792% | Current loss: 0.001 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 12 | Elapsed time: 64.23s | Validation accuracy: 98.497% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 13 | 269/538 batches complete | Training time: 31.111s | Training accuracy: 99.852% | Current loss: 0.004 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 13 | Elapsed time: 63.944s | Validation accuracy: 98.509% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 14 | 269/538 batches complete | Training time: 31.164s | Training accuracy: 99.847% | Current loss: 0.004 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 14 | Elapsed time: 64.457s | Validation accuracy: 98.435% | Device temperature: 59°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 15 | 269/538 batches complete | Training time: 31.331s | Training accuracy: 99.876% | Current loss: 0.006 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 15 | Elapsed time: 64.495s | Validation accuracy: 98.497% | Device temperature: 59°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 16 | 269/538 batches complete | Training time: 31.202s | Training accuracy: 99.873% | Current loss: 0.019 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 16 | Elapsed time: 64.351s | Validation accuracy: 98.448% | Device temperature: 61°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 17 | 269/538 batches complete | Training time: 31.102s | Training accuracy: 99.905% | Current loss: 0.002 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 17 | Elapsed time: 64.092s | Validation accuracy: 98.583% | Device temperature: 61°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 18 | 269/538 batches complete | Training time: 31.253s | Training accuracy: 99.878% | Current loss: 0.003 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 18 | Elapsed time: 64.377s | Validation accuracy: 98.522% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 19 | 269/538 batches complete | Training time: 31.223s | Training accuracy: 99.907% | Current loss: 0.02 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 19 | Elapsed time: 64.107s | Validation accuracy: 98.546% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+| Epoch: 20 | 269/538 batches complete | Training time: 31.138s | Training accuracy: 99.907% | Current loss: 0.001 |
+----------------------------------------------------------------------------------------------------
+| End of epoch 20 | Elapsed time: 64.336s | Validation accuracy: 98.657% | Device temperature: 60°C |
+----------------------------------------------------------------------------------------------------
+Model trained in 1291.009 s.
+Testing model with test dataset...
+Test accuracy: 99.205%
+Testing completed in 2635.031 ms.
+Saving model...
+Model saved in 31051.917 ms.
