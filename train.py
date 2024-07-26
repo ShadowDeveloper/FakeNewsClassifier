@@ -1,6 +1,5 @@
 import time
 
-
 print("Loading libraries...")
 start = time.time_ns()
 
@@ -25,7 +24,7 @@ batch_size = 128
 step_size = 1
 gamma = 0.9
 # size of embedding in embedding bag
-emsize = 2 ** 12 # 4096
+emsize = 2 ** 13 # 8192
 
 print(f"Config set in {round((time.time_ns() - start) / 1000000, 3)} ms.")
 
@@ -72,20 +71,32 @@ print(f"Data loaded and preprocessed in {round((time.time_ns() - start) / 100000
 print("Building vocabulary...")
 start = time.time_ns()
 
+
 tokenizer = get_tokenizer("basic_english")
 
-def yield_tokens(data):
-    for entry in data:
-        yield tokenizer(entry["text"])
+try:
+    with open("vocab.pth", "rb") as f:
+        print("Vocabulary found. Loading...")
+        start = time.time_ns()
+        vocab = torch.load(f)
+        print(f"Vocabulary loaded in {round((time.time_ns() - start) / 1000000, 3)} ms.")
+except FileNotFoundError:
+    print("Vocabulary not found. Building...")
+    start = time.time_ns()
+    def yield_tokens(data):
+        for entry in data:
+            yield tokenizer(entry["text"])
 
-vocab = build_vocab_from_iterator(yield_tokens(ds_train), specials=["<unk>"])
-vocab.set_default_index(vocab["<unk>"])
+    vocab = build_vocab_from_iterator(yield_tokens(ds_train), specials=["<unk>"])
+    vocab.set_default_index(vocab["<unk>"])
+    print(f"Vocabulary built in {round((time.time_ns() - start) / 1000000, 3)} ms.")
+    print("Saving vocabulary...")
+    start = time.time_ns()
+    torch.save(vocab, 'vocab.pth')
+    print(f"Vocabulary saved in {round((time.time_ns() - start) / 1000000, 3)} ms.")
 
 text_pipeline = lambda x: vocab(tokenizer(x))
 label_pipeline = lambda x: int(x)
-
-
-print(f"Vocabulary built in {round((time.time_ns() - start) / 1000000, 3)} ms.")
 
 print("Generating data batcher and iterator...")
 start = time.time_ns()
